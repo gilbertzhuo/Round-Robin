@@ -11,7 +11,7 @@ void roundRobin::fill()
     for (int i = 0; i < size; ++i)
     {
         int num = 0;
-        cout << "Processes "
+        cout << "Process "
              << i + 1 << " burst time?" << endl;
         cin >> num;
         this->burst_time.push_back(num);
