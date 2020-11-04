@@ -6,13 +6,12 @@ using namespace std;
 void roundRobin::fill()
 {
     int size = 0;
-    cout << "Number of processors: " << endl;
+    cout << "Number of processes: " << endl;
     cin >> size;
     for (int i = 0; i < size; ++i)
     {
-        this->processors.push_back(i);
         int num = 0;
-        cout << "Processor "
+        cout << "Processes "
              << i + 1 << " burst time?" << endl;
         cin >> num;
         this->burst_time.push_back(num);
